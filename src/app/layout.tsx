@@ -32,7 +32,11 @@ export default function RootLayout({
         <Navbar />
         <div className="flex">
           <Sidebar />
-          <div className="w-full h-screen overflow-auto">{children}</div>
+          <div className="w-full h-screen overflow-auto">
+            <div className="ml-20 mt-20">
+              {children}
+            </div>
+          </div>
         </div>
       </body>
     </html>
