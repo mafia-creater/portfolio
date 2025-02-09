@@ -1,22 +1,16 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import Hero from "./hero";
 import About from "./about";
-
-import useSmoothScroll from "../../hooks/useSmoothScroll";
+import useLenis from "../../hooks/useLenis";
 
 export default function Home() {
-  const scrollRef = useSmoothScroll();
+  useLenis(); // Initialize smooth scrolling
 
   return (
-    <div ref={scrollRef} data-scroll-container>
-      <section data-scroll-section>
-        <Hero />
-      </section>
-      <section data-scroll-section>
-        <About />
-      </section>
+    <div>
+      <Hero />
+      <About />
     </div>
   );
 }
