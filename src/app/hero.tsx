@@ -13,7 +13,7 @@ const Hero = () => {
   const heroRef = useRef(null);
 
   return (
-    <section ref={heroRef} className="h-screen flex flex-col justify-center px-10">
+    <section ref={heroRef} className="h-screen ml-28 flex flex-col justify-center px-10">
       <motion.div
         initial="hidden"
         whileInView="visible"
